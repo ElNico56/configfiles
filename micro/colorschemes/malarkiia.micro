@@ -1,0 +1,40 @@
+#16 colour
+
+color-link default           "white"
+color-link identifier        "brightcyan"
+color-link statement         "brightcyan"
+color-link symbol            "yellow"
+color-link symbol.brackets   "brightyellow"
+color-link match-brace       "black,brightyellow"
+color-link preproc           "blue"
+color-link type              "brightmagenta"
+color-link type.keyword      "black,brightmagenta"
+color-link special           "cyan"
+color-link constant          "red"
+color-link constant.string   "brightred"
+
+color-link error            "brightwhite,brightred"
+color-link todo             "black,brightyellow"
+color-link selection        "brightwhite,blue"
+color-link gutter-error     "brightwhite,red"
+color-link gutter-warning   "brightwhite,yellow"
+
+color-link hlsearch        "brightwhite,green"
+color-link statusline      "brightwhite,green"
+color-link tabbar          "brightwhite,green"
+color-link message         "brightgreen"
+color-link error-message   "brightwhite,brightred"
+
+color-link comment       "brightblack"
+color-link indent-char   "brightblack"
+color-link line-number   "brightblack"
+
+color-link current-line-number   "brightgreen"
+color-link divider               "brightgreen"
+
+color-link diff-added      "brightgreen"
+color-link diff-modified   "brightyellow"
+color-link diff-deleted    "brightred"
+
+color-link tab-error    "brightred"
+color-link trailingws   "brightred"

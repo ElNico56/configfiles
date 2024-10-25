@@ -1,0 +1,18 @@
+{
+	"autoclose": false,
+	"basename": true,
+	"colorscheme": "malarkiia",
+	"diffgutter": true,
+	"ft:ruby": {
+		"tabsize": 2,
+		"tabstospaces": true
+	},
+	"hlsearch": true,
+	"hltrailingws": true,
+	"indentchar": "-",
+	"matchbracestyle": "highlight",
+	"scrollmargin": 1,
+	"statusformatl": " $(filename)$(modified)",
+	"statusformatr": "L$(line)C$(col) $(opt:encoding) $(opt:filetype) ",
+	"tabhighlight": true
+}

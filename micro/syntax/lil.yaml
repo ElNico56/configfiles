@@ -1,0 +1,24 @@
+filetype: lil
+
+detect:
+  filename: "\\.lil$"
+
+rules:
+- statement: "\\b(each|in|while|end|on|do|if|elseif|else|where|by|orderby|asc|desc|select|extract|update|from|insert|with|into|send|local)\\b"
+- identifier: "\\b(floor|cos|sin|tan|exp|ln|sqrt|count|first|last|sum|min|max|raze|prod|range|keys|list|rows|cols|table|typeof|flip|mag|unit|heading|split|fuse|dict|take|drop|in|join|cross|parse|format|unless|limit|like|window)\\b"
+- symbol.brackets: "[()\\[\\]]"
+- symbol: "[\\-\\!\\+\\*\\/\\%\\^\\&\\|\\<\\>\\=\\~\\,\\@\\:\\[\\]\\(\\)\\.]"
+- constant.number: "\\b-?\\d*\\.?\\d+\\b"
+
+- constant.string:
+    start: "\""
+    end: "\""
+    skip: "\\\\."
+    rules:
+    - constant.specialChar: "\\\\[n\\'\"]"
+
+- comment:
+    start: "#"
+    end: "$"
+    rules:
+    - todo: "(TODO|NOTE|FIXME):?"

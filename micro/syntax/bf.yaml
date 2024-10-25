@@ -1,0 +1,15 @@
+filetype: mindscrew
+
+detect:
+  filename: "\\.bf$"
+
+rules:
+- statement: "[\\+\\-!]"
+- symbol: "[<>.,:]"
+- symbol.brackets: "[\\[\\]{}()]"
+
+- comment:
+    start: "#"
+    end: "$"
+    rules:
+    - todo: "(TODO|NOTE|FIXME):?"

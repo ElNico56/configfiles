@@ -1,18 +1,23 @@
 {
-	"autoclose": false,
-	"basename": true,
-	"colorscheme": "malarkiia",
-	"diffgutter": true,
-	"ft:ruby": {
-		"tabsize": 2,
-		"tabstospaces": true
-	},
-	"hlsearch": true,
-	"hltrailingws": true,
-	"indentchar": "-",
-	"matchbracestyle": "highlight",
-	"scrollmargin": 1,
-	"statusformatl": " $(filename)$(modified)",
-	"statusformatr": "L$(line)C$(col) $(opt:encoding) $(opt:filetype) ",
-	"tabhighlight": true
+    "autoclose": false,
+    "basename": true,
+    "colorscheme": "malarkiia",
+    "diffgutter": true,
+    "fakecursor": true,
+    "ft:ruby": {
+        "tabsize": 2,
+        "tabstospaces": true
+    },
+    "hlsearch": true,
+    "hltrailingws": true,
+    "indentchar": "┊",
+    "lsp.autocompleteDetails": true,
+    "lsp.ignoreTriggerCharacters": "completion,signature",
+    "lsp.server": "uiua=uiua lsp,lua=lua-language-server",
+    "matchbracestyle": "highlight",
+    "reload": "auto",
+    "scrollmargin": 1,
+    "statusformatl": "\u003e$(filename)\u003c $(modified)",
+    "statusformatr": "",
+    "tabhighlight": true
 }

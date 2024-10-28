@@ -1,0 +1,7 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "Alt-Left": "PreviousSplit|PreviousTab",
+    "Alt-Right": "NextSplit|NextTab",
+    "Ctrl-r": "command:reload",
+    "CtrlUnderscore": "lua:comment.comment"
+}

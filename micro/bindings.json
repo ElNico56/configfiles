@@ -3,5 +3,7 @@
     "Alt-Left": "PreviousSplit|PreviousTab",
     "Alt-Right": "NextSplit|NextTab",
     "Ctrl-r": "command:reload",
+    "Alt-Ctrl-Down":"SpawnMultiCursorDown",
+    "Alt-Ctrl-Up":"SpawnMultiCursorUp",
     "CtrlUnderscore": "lua:comment.comment"
 }

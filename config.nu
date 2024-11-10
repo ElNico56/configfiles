@@ -12,8 +12,9 @@ print $""
 
 # set nushell variables
 $env.PROMPT_COMMAND_RIGHT = {||}
-$env.PROMPT_INDICATOR = {" "}
-$env.PROMPT_COMMAND = {"\n " + (create_left_prompt) + "\n ┗━━━"}
+#$env.PROMPT_COMMAND = {"\n " + (create_left_prompt) + "\n ┗━━━"}
+#$env.PROMPT_INDICATOR = {" "}
+$env.PROMPT_COMMAND = {"\n " + (create_left_prompt)}
 $env.config.show_banner = false
 $env.config.history.max_size = 5_000
 $env.config.ls.clickable_links = false
@@ -25,14 +26,22 @@ $env.LUA_PATH = 'C:\Users\Nicolas\Stuff\lua\bin\lua\?.lua;C:\Users\Nicolas\Stuff
 $env.LUA_CPATH = 'C:\Users\Nicolas\Stuff\lua\bin\?.dll;C:\Users\Nicolas\Stuff\lua\bin\..\lib\lua\5.4\?.dll;C:\Users\Nicolas\Stuff\lua\bin\loadall.dll;.\?.dll;C:\Users\Nicolas\AppData\Roaming\luarocks\lib\lua\5.4\?.dll'
 
 # silly aliases
-alias dump = od -Ax -tx1
 alias lambster = node C:\Users\Nicolas\Stuff\lambster\cli.js
-alias lamb = lambster -i .lambrc
-alias del = rm -t
+alias lamb = lambster -i .lambrc # lambster wrapper
+alias c = tcc -run # C as scripting language
+
+# better ls
+def dir [] {
+	ls -a | sort-by name | sort-by type
+}
+
+# raylua wrappers
+def 'raylua build' [input:path output:path] { raylua_r $input $output }
+def 'raylua run' [arg:path] { raylua_s $arg }
 
 # tere wrapper
 def --wrapped --env tere [...args] {
-	let result = ( ^tere ...$args )
+	let result = (^tere ...$args)
 	if $result != "" {
 		cd $result
 	}
@@ -45,13 +54,18 @@ def --env doat [path:path closure:closure] {
 	cd -
 }
 
-# Execute fila on file change
+# easy c
+def ecc [file:path] {
+	clang -march=native -O3 -o ($file | str replace ".c" ".exe") $file
+}
+
+# Execute file on file change
 def watchdog [file:path] {
 	let ext = $file | path parse | get extension
 	match $ext {
 		"bqn"  => {watch $file {cls; bqn $file}}
 		"c"    => {watch $file {cls; tcc -run $file}}
-		# "c"    => {watch $file {cls; gcc -o .exe $file; .\.exe}}
+		# "c"    => {watch $file {cls; c $file}}
 		"js"   => {watch $file {cls; node $file}}
 		"jl"   => {watch $file {cls; julia $file}}
 		"lil"  => {watch $file {cls; lilt $file}}

@@ -1,0 +1,48 @@
+#16 colour
+
+
+color-link symbol.uiua.func.nilad "black,brightred"
+color-link symbol.uiua.func.monad "black,brightgreen"
+color-link symbol.uiua.func.dyad  "black,brightblue"
+color-link symbol.uiua.mod.monad  "black,brightyellow"
+color-link symbol.uiua.mod.dyad   "black,brightmagenta"
+
+color-link default              "black,brightwhite"
+color-link identifier           "black,brightgreen"
+color-link statement            "black,brightgreen"
+color-link symbol               "brightblack,brightwhite"
+color-link symbol.brackets      "black,brightyellow"
+color-link match-brace          "brightyellow,black"
+color-link preproc              "black,brightblue"
+color-link type                 "black,brightmagenta"
+color-link special              "black,brightcyan"
+color-link constant             "black,yellow"
+color-link constant.string      "black,brightcyan"
+color-link constant.specialChar "black,cyan"
+
+color-link error          "brightwhite,brightred"
+color-link todo           "black,brightyellow"
+color-link selection      "brightwhite,blue"
+color-link gutter-error   "brightwhite,red"
+color-link gutter-warning "brightwhite,yellow"
+
+color-link hlsearch      "black,brightgreen"
+color-link statusline    "brightblack"
+color-link tabbar        "brightblack"
+color-link message       "white,brightblack"
+color-link error-message "brightwhite,brightred"
+
+color-link comment      "black,white"
+color-link indent-char  "blue"
+color-link line-number  "blue"
+color-link color-column "blue"
+
+color-link current-line-number "white,blue"
+color-link divider             "brightblue"
+
+color-link diff-added    "brightgreen"
+color-link diff-modified "brightyellow"
+color-link diff-deleted  "brightred"
+
+color-link tab-error  "brightred"
+color-link trailingws "brightred"

@@ -1,6 +1,4 @@
 {
-    "autoclose": false,
-    "basename": true,
     "colorscheme": "malarkiia",
     "diffgutter": true,
     "fakecursor": true,
@@ -9,15 +7,10 @@
         "tabstospaces": true
     },
     "hlsearch": true,
-    "hltrailingws": true,
-    "indentchar": "┊",
-    "lsp.autocompleteDetails": true,
-    "lsp.ignoreTriggerCharacters": "completion,signature",
-    "lsp.server": "uiua=uiua lsp,lua=lua-language-server",
+    "indentchar": "|",
     "matchbracestyle": "highlight",
     "reload": "auto",
-    "scrollmargin": 1,
-    "statusformatl": "\u003e$(filename)\u003c $(modified)",
-    "statusformatr": "",
-    "tabhighlight": true
+    "ruler": false,
+    "statusformatl": "$(filename):$(line):$(col) $(modified)",
+    "statusformatr": ""
 }

@@ -28,7 +28,14 @@ $env.LUA_CPATH = 'C:\Users\Nicolas\Stuff\lua\bin\?.dll;C:\Users\Nicolas\Stuff\lu
 # silly aliases
 alias lambster = node C:\Users\Nicolas\Stuff\lambster\cli.js
 alias lamb = lambster -i .lambrc # lambster wrapper
-alias c = tcc -run # C as scripting language
+alias c = ^tcc -run # C as scripting language
+alias ed = ^ed -p:
+
+# better mkdir
+def --env newdir [name:string] {
+	mkdir $name
+	cd $name
+}
 
 # better ls
 def dir [] {
@@ -54,9 +61,14 @@ def --env doat [path:path closure:closure] {
 	cd -
 }
 
-# easy c
+# easy clang
 def ecc [file:path] {
 	clang -march=native -O3 -o ($file | str replace ".c" ".exe") $file
+}
+
+# easy tcc
+def tecc [file:path] {
+	tcc -o ($file | str replace ".c" ".exe") $file
 }
 
 # Execute file on file change

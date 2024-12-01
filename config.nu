@@ -1,13 +1,13 @@
 # Nushell profile
 
-print $""
-print $"                   =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
-print $"   \e[31m███   ███████\e[0m            Nushell ($env.NU_VERSION)"
-print $"   \e[33m████  ██     \e[0m   =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
-print $"   \e[32m██ ██ ██ ███ \e[0m    🖥️ Hostname      : (sys host | get hostname)"
-print $"   \e[36m██  ████   ██\e[0m    🌐 OS            : (sys host | get name)"
-print $"   \e[34m██   ███ ███ \e[0m    ⏲️ Uptime        : (sys host | get uptime)"
-print $"                   =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
+print $"\n"
+print $"                     =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
+print $"     \e[31m███   ███████\e[0m            Nushell ($env.NU_VERSION)"
+print $"     \e[33m████  ██     \e[0m   =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
+print $"     \e[32m██ ██ ██ ███ \e[0m    🖥️ Hostname      : (sys host | get hostname)"
+print $"     \e[36m██  ████   ██\e[0m    🌐 OS            : (sys host | get name)"
+print $"     \e[34m██   ███ ███ \e[0m    ⏲️ Uptime        : (sys host | get uptime)"
+print $"                     =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
 print $""
 
 # set nushell variables
@@ -59,16 +59,6 @@ def --env doat [path:path closure:closure] {
 	cd $path
 	do $closure
 	cd -
-}
-
-# easy clang
-def ecc [file:path] {
-	clang -march=native -O3 -o ($file | str replace ".c" ".exe") $file
-}
-
-# easy tcc
-def tecc [file:path] {
-	tcc -o ($file | str replace ".c" ".exe") $file
 }
 
 # Execute file on file change

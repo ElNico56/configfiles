@@ -1,0 +1,118 @@
+{
+	"[bqn]": {
+		"editor.fontFamily": "BQN386 Unicode, Uiua386, monospace"
+	},
+	"[clojure]": {
+		"editor.bracketPairColorization.enabled": true
+	},
+	"[python]": {
+		"editor.defaultFormatter": "eeyore.yapf",
+		"editor.indentSize": 4,
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true
+	},
+	"[racket]": {
+		"editor.bracketPairColorization.enabled": true,
+		"editor.wordSeparators": "()[]{}\",'`;#|"
+	},
+	"[ruby]": {
+		"editor.defaultFormatter": "mbessey.vscode-rufo",
+		"editor.indentSize": 2,
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true
+	},
+	//"[plaintext]": {
+	//"editor.fontSize": 48,
+	//	"editor.fontFamily": "linja pona 4.9" // "insa pi supa lape" //
+	//},
+	"[uiua]": {
+		"editor.fontFamily": "Uiua386, BQN386 Unicode, monospace",
+		"editor.unicodeHighlight.ambiguousCharacters": false
+	},
+	"breadcrumbs.filePath": "last",
+	"C_Cpp.default.compilerPath": "gcc",
+	"C_Cpp.default.intelliSenseMode": "windows-gcc-x86",
+	"C_Cpp.formatting": "vcFormat",
+	"C_Cpp.vcFormat.indent.preprocessor": "oneLeft",
+	"C_Cpp.vcFormat.newLine.beforeElse": false,
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+	//"C_Cpp.vcFormat.space.withinControlFlowStatementParentheses": true,
+	"editor.acceptSuggestionOnEnter": "smart",
+	"editor.detectIndentation": false,
+	//"editor.fontFamily": "jetbrains mono, monospace",
+	//"editor.fontFamily": "cascadia code, monospace",
+	//"editor.fontFamily": "fira code, monospace",
+	//"editor.fontFamily": "BQN386 Unicode, Uiua386, monospace",
+	"editor.fontFamily": "Uiua386, BQN386 Unicode, monospace",
+	//"editor.fontFamily": "Monaspace Neon Var, Uiua386, monospace",
+	//"editor.fontFamily": "Monaspace Argon Var, Uiua386, monospace",
+	//"editor.fontFamily": "Monaspace Krypton Var, Uiua386, monospace",
+	//"editor.fontFamily": "Monaspace Xenon Var, Uiua386, monospace",
+	//"editor.fontFamily": "Monaspace Radon Var, Uiua386, monospace",
+	//"editor.fontFamily": "novamono, monospace",
+	//"editor.fontFamily": "comic mono, Uiua386, monospace",
+	//"editor.fontFamily": "b612 mono, Uiua386, monospace",
+	//"editor.fontLigatures": "'onum', 'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
+	//"editor.fontLigatures": true,
+	"editor.fontSize": 18,
+	"editor.formatOnSave": true,
+	"editor.indentSize": 3,
+	"editor.tabSize": 3,
+	"editor.insertSpaces": false,
+	"editor.largeFileOptimizations": false,
+	"editor.lightbulb.enabled": "off",
+	"editor.minimap.maxColumn": 80,
+	"editor.minimap.renderCharacters": false,
+	"editor.minimap.scale": 2,
+	"editor.rename.enablePreview": false,
+	"editor.renderWhitespace": "none",
+	"editor.rulers": [
+		80
+	],
+	"editor.semanticHighlighting.enabled": true,
+	"explorer.confirmDelete": false,
+	"files.associations": {
+		"*.c7": "clojure",
+		"*.fe": "clojure"
+	},
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"git.openRepositoryInParentFolders": "always",
+	"go.inlayHints.constantValues": true,
+	"julia.enableTelemetry": false,
+	"julia.symbolCacheDownload": true,
+	"Lua.addonManager.enable": true,
+	"Lua.completion.callSnippet": "Both",
+	"Lua.format.defaultConfig": {
+		"call_arg_parentheses": "remove",
+		"space_around_table_append_operator": "true",
+		"space_around_table_field_list": "false",
+		"space_before_function_call_single_arg": "false",
+		"space_around_concat_operator": "false"
+	},
+	"nushellLanguageServer.hints.showInferredTypes": false,
+	"python.defaultInterpreterPath": "py",
+	"security.workspace.trust.enabled": false,
+	"terminal.integrated.commandsToSkipShell": [
+		"language-julia.interrupt"
+	],
+	"terminal.integrated.defaultProfile.windows": "Nushell",
+	"terminal.integrated.fontSize": 18,
+	"uiua.inlayHints.bindingSignatureHints": false,
+	"uiua.inlayHints.inlineSignatureHints": false,
+	"uiua.inlayHints.values": true,
+	"uiua.semanticHighlighting.customTokenTypes": false,
+	"vsicons.dontShowNewVersionMessage": true,
+	"window.commandCenter": false,
+	"window.menuBarVisibility": "toggle",
+	"workbench.colorTheme": "The Best Theme",
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.layoutControl.enabled": false
+}

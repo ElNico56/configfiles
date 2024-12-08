@@ -14,7 +14,7 @@ print $""
 $env.PROMPT_COMMAND_RIGHT = {||}
 #$env.PROMPT_COMMAND = {"\n " + (create_left_prompt) + "\n ┗━━━"}
 #$env.PROMPT_INDICATOR = {" "}
-$env.PROMPT_COMMAND = {"\n " + (create_left_prompt)}
+#$env.PROMPT_COMMAND = {"\n " + (create_left_prompt)}
 $env.config.show_banner = false
 $env.config.history.max_size = 5_000
 $env.config.ls.clickable_links = false
@@ -64,18 +64,21 @@ def --env doat [path:path closure:closure] {
 # Execute file on file change
 def watchdog [file:path] {
 	let ext = $file | path parse | get extension
-	match $ext {
-		"bqn"  => {watch $file {cls; bqn $file}}
-		"c"    => {watch $file {cls; tcc -run $file}}
-		# "c"    => {watch $file {cls; c $file}}
-		"js"   => {watch $file {cls; node $file}}
-		"jl"   => {watch $file {cls; julia $file}}
-		"lil"  => {watch $file {cls; lilt $file}}
-		"lua"  => {watch $file {cls; lua $file}}
-		"py"   => {watch $file {cls; py $file}}
-		"raku" => {watch $file {cls; raku $file}}
-		"rb"   => {watch $file {cls; ruby $file}}
-		"ua"   => {watch $file {cls; uiua $file}}
-		_      => {print $"Unsupported file extension: ($ext)"}
+	watch $file {
+		try {
+			match $ext {
+				"bqn"  => {cls; ^bqn $file}
+				"c"    => {cls; ^tcc -run $file}
+				"js"   => {cls; ^node $file}
+				"jl"   => {cls; ^julia $file}
+				"lil"  => {cls; ^lilt $file}
+				"lua"  => {cls; ^lua $file}
+				"py"   => {cls; ^py $file}
+				"raku" => {cls; ^raku $file}
+				"rb"   => {cls; ^ruby $file}
+				"ua"   => {cls; ^uiua $file}
+				_      => {print $"Unsupported file extension: ($ext)"}
+			}
+		} catch {}
 	}
 }

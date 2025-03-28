@@ -8,8 +8,8 @@
 	"[python]": {
 		"editor.defaultFormatter": "eeyore.yapf",
 		"editor.indentSize": 4,
-		"editor.tabSize": 4,
-		"editor.insertSpaces": true
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
 	},
 	"[racket]": {
 		"editor.bracketPairColorization.enabled": true,
@@ -18,8 +18,8 @@
 	"[ruby]": {
 		"editor.defaultFormatter": "mbessey.vscode-rufo",
 		"editor.indentSize": 2,
-		"editor.tabSize": 2,
-		"editor.insertSpaces": true
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2
 	},
 	//"[plaintext]": {
 	//"editor.fontSize": 48,
@@ -56,10 +56,9 @@
 	//"editor.fontFamily": "b612 mono, Uiua386, monospace",
 	//"editor.fontLigatures": "'onum', 'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
 	//"editor.fontLigatures": true,
-	"editor.fontSize": 18,
+	"editor.fontSize": 14,
 	"editor.formatOnSave": true,
 	"editor.indentSize": 4,
-	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
 	"editor.largeFileOptimizations": false,
 	"editor.lightbulb.enabled": "off",
@@ -72,6 +71,7 @@
 		80
 	],
 	"editor.semanticHighlighting.enabled": true,
+	"editor.tabSize": 4,
 	"explorer.confirmDelete": false,
 	"files.associations": {
 		"*.c7": "clojure",
@@ -91,10 +91,14 @@
 	"Lua.completion.callSnippet": "Both",
 	"Lua.format.defaultConfig": {
 		"call_arg_parentheses": "remove",
+		"space_around_concat_operator": "false",
 		"space_around_table_append_operator": "true",
 		"space_around_table_field_list": "false",
-		"space_before_function_call_single_arg": "false",
-		"space_around_concat_operator": "false"
+		"space_before_function_call_single_arg": "false"
+	},
+	"material-icon-theme.files.associations": {
+		"*.bbmodel": "../../manuel-underscore.figura-1.8.0/images/blockbench_logo_white",
+		"avatar.json": "../../manuel-underscore.figura-1.8.0/images/avatarjson"
 	},
 	"nushellLanguageServer.hints.showInferredTypes": false,
 	"python.defaultInterpreterPath": "py",
@@ -104,6 +108,7 @@
 	],
 	"terminal.integrated.defaultProfile.windows": "Nushell",
 	"terminal.integrated.fontSize": 18,
+	"uiua.format.onTypeFormatting": true,
 	"uiua.inlayHints.bindingSignatureHints": false,
 	"uiua.inlayHints.inlineSignatureHints": false,
 	"uiua.inlayHints.values": true,
@@ -114,5 +119,6 @@
 	"workbench.colorTheme": "The Best Theme",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.iconTheme": "vscode-icons",
-	"workbench.layoutControl.enabled": false
+	"workbench.layoutControl.enabled": false,
+	"hexeditor.columnWidth": 16
 }

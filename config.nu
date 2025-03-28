@@ -54,13 +54,6 @@ def --wrapped --env tere [...args] {
 	}
 }
 
-# Execute command at a specific location
-def --env doat [path:path closure:closure] {
-	cd $path
-	do $closure
-	cd -
-}
-
 # Execute file on file change
 def watchdog [file:path] {
 	let ext = $file | path parse | get extension

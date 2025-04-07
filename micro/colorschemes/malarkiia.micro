@@ -18,6 +18,7 @@ color-link preproc              "blue"
 color-link type                 "brightmagenta"
 color-link special              "brightcyan"
 color-link constant             "yellow"
+color-link constant.number      "brightyellow"
 color-link constant.string      "brightcyan"
 color-link constant.specialChar "cyan"
 

@@ -30,21 +30,19 @@ alias lambster = node C:\Users\Nicolas\Stuff\lambster\cli.js
 alias lamb = lambster -i .lambrc # lambster wrapper
 alias c = ^tcc -run # C as scripting language
 alias ed = ^ed -p:
+alias make = ^mingw32-make # make wrapper
 
-# better mkdir
-def --env newdir [name:string] {
-	mkdir $name
-	cd $name
+# do at location
+def --env doat [where:path what:closure] {
+	cd $where
+	try {do $what} catch {}
+	cd -
 }
 
 # better ls
 def dir [] {
 	ls -a | sort-by name | sort-by type
 }
-
-# raylua wrappers
-def 'raylua build' [input:path output:path] { raylua_r $input $output }
-def 'raylua run' [arg:path] { raylua_s $arg }
 
 # tere wrapper
 def --wrapped --env tere [...args] {

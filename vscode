@@ -4,19 +4,10 @@
 		"editor.fontSize": 18,
 		"editor.rulers": [ 65 ]
 	},
-	"[clojure]": {
-		"editor.bracketPairColorization.enabled": true
-	},
 	"[python]": {
 		//"editor.defaultFormatter": "eeyore.yapf",
 		"editor.defaultFormatter": "ms-python.black-formatter",
-		"editor.indentSize": 4,
 		"editor.insertSpaces": true,
-		"editor.tabSize": 4
-	},
-	"[racket]": {
-		"editor.bracketPairColorization.enabled": true,
-		"editor.wordSeparators": "()[]{}\",'`;#|"
 	},
 	//"[plaintext]": {
 	//"editor.fontSize": 48,
@@ -130,4 +121,5 @@
 	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
 	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
 	"C_Cpp.formatting": "vcFormat",
+	"chat.commandCenter.enabled": false,
 }

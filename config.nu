@@ -15,7 +15,7 @@ let fc = ($ansi | shuffle | first)
 let sc = ($ansi | filter {$in != $fc } | shuffle | first)
 def create_left_prompt [] {
 	let path = pwd | str replace $"($env.HOMEDRIVE)($env.HOMEPATH)" '~'
-	let folders = $path | split row '\'
+	let folders = $path | split row $"\\"
 	let colored = $folders | each {$"($fc)($in)"} | str join $"($sc)\\"
 
 	if ($folders | length) <= 7 {
@@ -26,7 +26,6 @@ def create_left_prompt [] {
 		$"($fc)*($sc)\\($fc)($folder)($sc)\\($fc)($subfolder)($sc)"
 	}
 }
-
 $env.PROMPT_COMMAND = {create_left_prompt}
 $env.PROMPT_INDICATOR = $"($sc)> "
 $env.config.show_banner = false
@@ -42,49 +41,50 @@ $env.LUA_CPATH = 'C:\Users\Nicolas\Stuff\lua\bin\?.dll;C:\Users\Nicolas\Stuff\lu
 # silly aliases
 alias lambster = ^node 'C:\Users\Nicolas\Stuff\lambster\cli.js'
 alias ok = ^node 'C:\Users\Nicolas\Stuff\oK\repl.js'
+alias oK = ok
 alias c = ^tcc -run # C as scripting language
 alias ed = ^ed -p:
 alias make = ^mingw32-make # make wrapper
 
 # do at location
 def --env doat [where:path what:closure] {
-cd $where
-try {do $what} catch {}
-cd -
+	cd $where
+	try {do $what} catch {}
+	cd -
 }
 
 # better ls
 def dir [] {
-ls -a | sort-by name | sort-by type
+	ls -a | sort-by name | sort-by type
 }
 
 # tere wrapper
 def --wrapped --env tere [...args] {
-let result = (^tere ...$args)
-if $result != "" {
-cd $result
-}
+	let result = (^tere ...$args)
+	if $result != "" {
+		cd $result
+	}
 }
 
 # Execute file on file change
 def watchdog [file:path] {
-let ext = $file | path parse | get extension
-watch $file {
-try {
-match $ext {
-"bqn"  => {cls; ^bqn $file}
-"c"    => {cls; ^tcc -run $file}
-"js"   => {cls; ^node $file}
-"jl"   => {cls; ^julia $file}
-"lil"  => {cls; ^lilt $file}
-"lua"  => {cls; ^lua $file}
-"py"   => {cls; ^py $file}
-"raku" => {cls; ^raku $file}
-"rb"   => {cls; ^ruby $file}
-"ua"   => {cls; ^uiua $file}
-"k"    => {cls; ok $file}
-_      => {print $"Unsupported file extension: ($ext)"}
-}
-} catch {}
-}
+	let ext = $file | path parse | get extension
+	watch $file {
+		try {
+			match $ext {
+				"bqn"  => {cls; ^bqn $file}
+				"c"    => {cls; ^tcc -run $file}
+				"js"   => {cls; ^node $file}
+				"jl"   => {cls; ^julia $file}
+				"lil"  => {cls; ^lilt $file}
+				"lua"  => {cls; ^lua $file}
+				"py"   => {cls; ^py $file}
+				"raku" => {cls; ^raku $file}
+				"rb"   => {cls; ^ruby $file}
+				"ua"   => {cls; ^uiua $file}
+				"k"    => {cls; ok $file}
+				_      => {print $"Unsupported file extension: ($ext)"}
+			}
+		} catch {}
+	}
 }

@@ -1,10 +1,8 @@
 # This is a script to update the config files
 
-# Set the working directory
-let $work_dir = $env.pwd
-
-cp $nu.config-path $work_dir
-cp ~\.config\micro\settings.json ($work_dir | path join "micro")
-cp ~\.config\micro\bindings.json ($work_dir | path join "micro")
-cp -r ~\.config\micro\colorschemes ($work_dir | path join "micro")
-cp ~\AppData\Roaming\Code\User\settings.json ($work_dir | path join "vscode")
+cp $nu.config-path $env.pwd
+cp ~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 $env.pwd
+cp ~\.config\micro\settings.json ($env.pwd | path join "micro")
+cp ~\.config\micro\bindings.json ($env.pwd | path join "micro")
+cp -r ~\.config\micro\colorschemes ($env.pwd | path join "micro")
+cp ~\AppData\Roaming\Code\User\settings.json ($env.pwd | path join "vscode")

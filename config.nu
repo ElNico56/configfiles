@@ -1,16 +1,19 @@
 # Nushell profile
 
-let ansi = [(ansi lr) (ansi ly) (ansi lg) (ansi lc) (ansi lu) (ansi lm)]
 
 print $"Nushell ($env.NU_VERSION)\n"
-print $"  ($ansi | each {$in + '██'} | str join ' ')\n"
+print " "
+print -n $"(ansi lr)  ██"
+print -n $"(ansi ly) ██"
+print -n $"(ansi lg) ██"
+print -n $"(ansi lc) ██"
+print -n $"(ansi lu) ██"
+print -n $"(ansi lm) ██"
+print "\n"
 
 # set nushell variables
-$env.PROMPT_COMMAND_RIGHT = {||}
-#$env.PROMPT_COMMAND = {"\n " + (create_left_prompt) + "\n ┗━━━"}
-#$env.PROMPT_INDICATOR = {" "}
-#$env.PROMPT_COMMAND = {"\n " + (create_left_prompt)}
 
+let ansi = [(ansi lr) (ansi ly) (ansi lg) (ansi lc) (ansi lu) (ansi lm)]
 let fc = ($ansi | shuffle | first)
 let sc = ($ansi | filter {$in != $fc } | shuffle | first)
 def create_left_prompt [] {
@@ -26,11 +29,11 @@ def create_left_prompt [] {
 		$"($fc)*($sc)\\($fc)($folder)($sc)\\($fc)($subfolder)($sc)"
 	}
 }
+$env.PROMPT_COMMAND_RIGHT = {||}
 $env.PROMPT_COMMAND = {create_left_prompt}
 $env.PROMPT_INDICATOR = $"($sc)> "
 $env.config.show_banner = false
 $env.config.history.max_size = 5_000
-$env.config.ls.clickable_links = false
 $env.config.table.index_mode = 'auto'
 $env.config.table.mode = 'heavy'
 
@@ -41,9 +44,6 @@ $env.LUA_CPATH = 'C:\Users\Nicolas\Stuff\lua\bin\?.dll;C:\Users\Nicolas\Stuff\lu
 # silly aliases
 alias lambster = ^node 'C:\Users\Nicolas\Stuff\lambster\cli.js'
 alias ok = ^node 'C:\Users\Nicolas\Stuff\oK\repl.js'
-alias oK = ok
-alias c = ^tcc -run # C as scripting language
-alias ed = ^ed -p:
 alias make = ^mingw32-make # make wrapper
 
 # do at location

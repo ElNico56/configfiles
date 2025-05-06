@@ -2,12 +2,20 @@
 	"[bqn]": {
 		"editor.fontFamily": "BQN386 Unicode, Uiua386, monospace",
 		"editor.fontSize": 18,
-		"editor.rulers": [ 65 ]
+		"editor.rulers": [
+			65
+		]
+	},
+	"[c]": {
+		"editor.defaultFormatter": "ab-498.cppformat",
+		"editor.indentSize": "tabSize",
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
 	},
 	"[python]": {
 		//"editor.defaultFormatter": "eeyore.yapf",
 		"editor.defaultFormatter": "ms-python.black-formatter",
-		"editor.insertSpaces": true,
+		"editor.insertSpaces": true
 	},
 	//"[plaintext]": {
 	//"editor.fontSize": 48,
@@ -17,13 +25,28 @@
 	"[uiua]": {
 		"editor.fontFamily": "Uiua386, BQN386 Unicode, monospace",
 		"editor.fontSize": 18,
-		"editor.indentSize": 2,
+		"editor.indentSize": "tabSize",
 		"editor.insertSpaces": true,
-		"editor.rulers": [ 65 ],
+		"editor.rulers": [
+			60
+		],
 		"editor.tabSize": 2,
 		"editor.unicodeHighlight.ambiguousCharacters": false
 	},
 	"breadcrumbs.enabled": false,
+	"C_Cpp.formatting": "vcFormat",
+	"C_Cpp.vcFormat.newLine.beforeCatch": false,
+	"C_Cpp.vcFormat.newLine.beforeElse": false,
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+	"C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
+	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+	"chat.commandCenter.enabled": false,
+	"cppformat.formatargs": "--keep-one-line-statements",
 	"editor.acceptSuggestionOnEnter": "smart",
 	"editor.detectIndentation": false,
 	//"editor.fontFamily": "jetbrains mono, monospace",
@@ -33,19 +56,21 @@
 	//"editor.fontFamily": "fira code, monospace",
 	//"editor.fontFamily": "BQN386 Unicode, Uiua386, monospace",
 	//"editor.fontFamily": "Uiua386, BQN386 Unicode, monospace",
-	"editor.fontFamily": "Monaspace Neon Var, monospace",
 	//"editor.fontFamily": "Monaspace Argon Var, monospace",
 	//"editor.fontFamily": "Monaspace Krypton Var, monospace",
-	//"editor.fontFamily": "Monaspace Xenon Var, monospace",
+	"editor.fontFamily": "Monaspace Neon Var, monospace",
 	//"editor.fontFamily": "Monaspace Radon Var, monospace",
+	//"editor.fontFamily": "Monaspace Xenon Var, monospace",
 	//"editor.fontFamily": "novamono, monospace",
 	//"editor.fontFamily": "comic mono, monospace",
 	//"editor.fontFamily": "b612 mono, monospace",
+	//"editor.fontFamily": "monocraft, monospace",
 	//"editor.fontLigatures": "'onum', 'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
 	//"editor.fontLigatures": true,
 	"editor.fontSize": 14,
 	"editor.formatOnSave": true,
-	"editor.indentSize": 4,
+	"editor.indentSize": "tabSize",
+	"editor.inlayHints.enabled": "off",
 	"editor.insertSpaces": false,
 	"editor.largeFileOptimizations": false,
 	"editor.lightbulb.enabled": "off",
@@ -58,7 +83,11 @@
 	"editor.semanticHighlighting.enabled": true,
 	"editor.tabSize": 4,
 	"explorer.confirmDelete": false,
-	"files.associations": { "*.c7": "clojure", "*.fe": "clojure" },
+	"files.associations": {
+		"*.c7": "clojure",
+		"*.fe": "clojure",
+		"*.h": "c"
+	},
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
@@ -66,18 +95,6 @@
 	"git.confirmSync": false,
 	"git.enableSmartCommit": true,
 	"git.openRepositoryInParentFolders": "always",
-	"macros.list": {
-		"DeleteLineShift": [
-			"editor.action.deleteLines",
-			"cursorDown"
-		]
-	},
-	"github.copilot.enable": {
-		"*": true,
-		"markdown": false,
-		"plaintext": false,
-		"scminput": false
-	},
 	"hexeditor.columnWidth": 16,
 	"json.format.keepLines": true,
 	"Lua.format.defaultConfig": {
@@ -87,6 +104,12 @@
 		"space_around_table_field_list": "false",
 		"space_before_function_call_single_arg": "false"
 	},
+	"macros.list": {
+		"DeleteLineShift": [
+			"editor.action.deleteLines",
+			"cursorDown"
+		]
+	},
 	"material-icon-theme.files.associations": {
 		"*.bbmodel": "../../manuel-underscore.figura-1.8.0/images/blockbench_logo_white",
 		"avatar.json": "../../manuel-underscore.figura-1.8.0/images/avatarjson"
@@ -94,7 +117,6 @@
 	"nushellLanguageServer.hints.showInferredTypes": false,
 	"python.defaultInterpreterPath": "py",
 	"security.workspace.trust.enabled": false,
-	"terminal.integrated.commandsToSkipShell": [ "language-julia.interrupt" ],
 	"terminal.integrated.defaultProfile.windows": "PowerShell",
 	"terminal.integrated.fontSize": 18,
 	"uiua.format.onTypeFormatting": true,
@@ -108,18 +130,5 @@
 	"workbench.colorTheme": "The Best Theme",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.iconTheme": "vscode-icons",
-	"workbench.layoutControl.enabled": false,
-	"editor.inlayHints.enabled": "off",
-	"C_Cpp.vcFormat.newLine.beforeElse": false,
-	"C_Cpp.vcFormat.newLine.beforeCatch": false,
-	"C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
-	"C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
-	"C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
-	"C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
-	"C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
-	"C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
-	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
-	"C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
-	"C_Cpp.formatting": "vcFormat",
-	"chat.commandCenter.enabled": false,
+	"workbench.layoutControl.enabled": false
 }

@@ -44,7 +44,9 @@ $env.LUA_CPATH = 'C:\Users\Nicolas\Stuff\lua\bin\?.dll;C:\Users\Nicolas\Stuff\lu
 # silly aliases
 alias lambster = ^node 'C:\Users\Nicolas\Stuff\lambster\cli.js'
 alias ok = ^node 'C:\Users\Nicolas\Stuff\oK\repl.js'
+alias oK = ^node 'C:\Users\Nicolas\Stuff\oK\repl.js'
 alias make = ^mingw32-make # make wrapper
+alias raku = ^rakudo 'C:\Users\Nicolas\Stuff\repl.raku'
 
 # do at location
 def --env doat [where:path what:closure] {

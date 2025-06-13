@@ -1,6 +1,13 @@
 #16 colour
 
 
+color-link symbol.uiua.func.nilad   "brightred"
+color-link symbol.uiua.func.monad   "brightgreen"
+color-link symbol.uiua.func.dyad    "brightblue"
+color-link symbol.uiua.mod.monad    "brightyellow"
+color-link symbol.uiua.mod.dyad     "brightmagenta"
+color-link identifier.uiua.label    "brightwhite,brightblack"
+
 color-link default              "brightwhite"
 color-link identifier           "white"
 color-link statement            "green"
@@ -10,7 +17,7 @@ color-link match-brace          "black,brightyellow"
 color-link preproc              "blue"
 color-link type                 "brightmagenta"
 color-link special              "brightcyan"
-color-link constant             "brightblue"
+color-link constant             "yellow"
 color-link constant.string      "brightcyan"
 color-link constant.specialChar "cyan"
 

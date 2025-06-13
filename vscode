@@ -2,12 +2,16 @@
 	"[bqn]": {
 		"editor.fontFamily": "BQN386 Unicode, Uiua386, monospace",
 		"editor.fontSize": 18,
-		"editor.rulers": [
-			65
-		]
+		"editor.rulers": [ 65 ]
+	},
+	"[apl]": {
+		"editor.fontFamily": "APL387 Unicode, monospace",
+		"editor.fontSize": 18,
+		"editor.rulers": [ 65 ]
 	},
 	"[c]": {
-		"editor.defaultFormatter": "ab-498.cppformat",
+		//"editor.defaultFormatter": "ab-498.cppformat",
+		"editor.defaultFormatter": "ms-vscode.cpptools",
 		"editor.indentSize": "tabSize",
 		"editor.insertSpaces": true,
 		"editor.tabSize": 4
@@ -18,8 +22,10 @@
 		"editor.insertSpaces": true
 	},
 	//"[plaintext]": {
-	//"editor.fontSize": 48,
-	//	"editor.fontFamily": "linja pona 4.9"
+	//	"editor.wordWrap": "bounded",
+	//	"editor.fontSize": 24,
+	//	//"editor.fontFamily": "pecita",
+	//	//"editor.fontFamily": "linja pona 4.9",
 	//	"editor.fontFamily": "insa pi supa lape"
 	//},
 	"[uiua]": {
@@ -27,9 +33,7 @@
 		"editor.fontSize": 18,
 		"editor.indentSize": "tabSize",
 		"editor.insertSpaces": true,
-		"editor.rulers": [
-			60
-		],
+		"editor.rulers": [ 60 ],
 		"editor.tabSize": 2,
 		"editor.unicodeHighlight.ambiguousCharacters": false
 	},
@@ -49,24 +53,25 @@
 	"cppformat.formatargs": "--keep-one-line-statements",
 	"editor.acceptSuggestionOnEnter": "smart",
 	"editor.detectIndentation": false,
-	//"editor.fontFamily": "jetbrains mono, monospace",
-	//"editor.fontFamily": "cascadia code, monospace",
-	//"editor.fontFamily": "share tech mono, monospace",
-	//"editor.fontFamily": "ocr a, monospace",
-	//"editor.fontFamily": "fira code, monospace",
-	//"editor.fontFamily": "BQN386 Unicode, Uiua386, monospace",
-	//"editor.fontFamily": "Uiua386, BQN386 Unicode, monospace",
-	//"editor.fontFamily": "Monaspace Argon Var, monospace",
-	//"editor.fontFamily": "Monaspace Krypton Var, monospace",
-	"editor.fontFamily": "Monaspace Neon Var, monospace",
-	//"editor.fontFamily": "Monaspace Radon Var, monospace",
-	//"editor.fontFamily": "Monaspace Xenon Var, monospace",
-	//"editor.fontFamily": "novamono, monospace",
-	//"editor.fontFamily": "comic mono, monospace",
-	//"editor.fontFamily": "b612 mono, monospace",
-	//"editor.fontFamily": "monocraft, monospace",
-	//"editor.fontLigatures": "'onum', 'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
-	//"editor.fontLigatures": true,
+	// "editor.fontFamily": "jetbrains mono, monospace",
+	// "editor.fontFamily": "cascadia code, monospace",
+	// "editor.fontFamily": "share tech mono, monospace",
+	// "editor.fontFamily": "ocr a, monospace",
+	// "editor.fontFamily": "fira code, monospace",
+	// "editor.fontFamily": "BQN386 Unicode, Uiua386, monospace",
+	// "editor.fontFamily": "Uiua386, BQN386 Unicode, monospace",
+	// "editor.fontFamily": "Monaspace Argon Var, monospace",
+	// "editor.fontFamily": "Monaspace Krypton Var, monospace",
+	// "editor.fontFamily": "Monaspace Neon Var, monospace",
+	"editor.fontFamily": "Monaspace Radon Var, monospace",
+	// "editor.fontFamily": "Monaspace Xenon Var, monospace",
+	// "editor.fontFamily": "novamono, monospace",
+	// "editor.fontFamily": "comic mono, monospace",
+	// "editor.fontFamily": "APL387 Unicode, monospace",
+	// "editor.fontFamily": "b612 mono, monospace",
+	// "editor.fontFamily": "monocraft, monospace",
+	// "editor.fontLigatures": "'onum', 'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
+	// "editor.fontLigatures": true,
 	"editor.fontSize": 14,
 	"editor.formatOnSave": true,
 	"editor.indentSize": "tabSize",
@@ -86,7 +91,9 @@
 	"files.associations": {
 		"*.c7": "clojure",
 		"*.fe": "clojure",
-		"*.h": "c"
+		"*.h": "c",
+		"*.hxx": "cpp",
+		"*.apl": "apl"
 	},
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
@@ -125,10 +132,10 @@
 	"uiua.inlayHints.values": true,
 	"uiua.semanticHighlighting.customTokenTypes": false,
 	"vsicons.dontShowNewVersionMessage": true,
-	"window.commandCenter": false,
-	"window.menuBarVisibility": "toggle",
 	"workbench.colorTheme": "The Best Theme",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.iconTheme": "vscode-icons",
-	"workbench.layoutControl.enabled": false
+	"window.commandCenter": false,
+	"workbench.layoutControl.enabled": false,
+	"window.menuBarVisibility": "toggle",
 }

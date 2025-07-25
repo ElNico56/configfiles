@@ -13,7 +13,7 @@
 		//"editor.defaultFormatter": "ab-498.cppformat",
 		"editor.defaultFormatter": "ms-vscode.cpptools",
 		"editor.indentSize": "tabSize",
-		"editor.insertSpaces": true,
+		"editor.insertSpaces": false,
 		"editor.tabSize": 4
 	},
 	"[python]": {
@@ -21,13 +21,12 @@
 		"editor.defaultFormatter": "ms-python.black-formatter",
 		"editor.insertSpaces": true
 	},
-	//"[plaintext]": {
-	//	"editor.wordWrap": "bounded",
-	//	"editor.fontSize": 24,
-	//	//"editor.fontFamily": "pecita",
-	//	//"editor.fontFamily": "linja pona 4.9",
-	//	"editor.fontFamily": "insa pi supa lape"
-	//},
+	"[plaintext]": {
+		"editor.wordWrap": "bounded",
+		//"editor.fontFamily": "pecita",
+		//"editor.fontFamily": "linja pona 4.9",
+		//"editor.fontFamily": "insa pi supa lape"
+	},
 	"[uiua]": {
 		"editor.fontFamily": "Uiua386, BQN386 Unicode, monospace",
 		"editor.fontSize": 18,
@@ -63,10 +62,10 @@
 	// "editor.fontFamily": "Monaspace Argon Var, monospace",
 	// "editor.fontFamily": "Monaspace Krypton Var, monospace",
 	// "editor.fontFamily": "Monaspace Neon Var, monospace",
-	"editor.fontFamily": "Monaspace Radon Var, monospace",
+	// "editor.fontFamily": "Monaspace Radon Var, monospace",
 	// "editor.fontFamily": "Monaspace Xenon Var, monospace",
 	// "editor.fontFamily": "novamono, monospace",
-	// "editor.fontFamily": "comic mono, monospace",
+	"editor.fontFamily": "comic mono, monospace",
 	// "editor.fontFamily": "APL387 Unicode, monospace",
 	// "editor.fontFamily": "b612 mono, monospace",
 	// "editor.fontFamily": "monocraft, monospace",
@@ -130,12 +129,14 @@
 	"uiua.inlayHints.bindingSignatureHints": false,
 	"uiua.inlayHints.inlineSignatureHints": false,
 	"uiua.inlayHints.values": true,
-	"uiua.semanticHighlighting.customTokenTypes": false,
+	"uiua.semanticHighlighting.customTokenTypes": true,
 	"vsicons.dontShowNewVersionMessage": true,
-	"workbench.colorTheme": "The Best Theme",
+	"workbench.colorTheme": "Ayu Dark",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.iconTheme": "vscode-icons",
 	"window.commandCenter": false,
 	"workbench.layoutControl.enabled": false,
 	"window.menuBarVisibility": "toggle",
+	"workbench.sideBar.location": "right",
+	"editor.minimap.enabled": false,
 }

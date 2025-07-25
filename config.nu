@@ -48,6 +48,7 @@ alias oK = ^node 'C:\Users\Nicolas\Stuff\oK\repl.js'
 alias make = ^mingw32-make # make wrapper
 alias raku = ^rakudo 'C:\Users\Nicolas\Stuff\repl.raku'
 alias nimr = ^nim --verbosity:0 r
+alias pup = ^pip
 
 # do at location
 def --env doat [where:path what:closure] {

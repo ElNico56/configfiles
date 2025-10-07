@@ -2,19 +2,15 @@
 	"[bqn]": {
 		"editor.fontFamily": "BQN386 Unicode, Uiua386, monospace",
 		"editor.fontSize": 18,
-		"editor.rulers": [ 65 ]
+		"editor.rulers": [ 60 ]
 	},
-	"[apl]": {
-		"editor.fontFamily": "APL387 Unicode, monospace",
-		"editor.fontSize": 18,
-		"editor.rulers": [ 65 ]
+	"[nim]": {
+		"editor.insertSpaces": true
 	},
 	"[c]": {
 		//"editor.defaultFormatter": "ab-498.cppformat",
 		"editor.defaultFormatter": "ms-vscode.cpptools",
-		"editor.indentSize": "tabSize",
-		"editor.insertSpaces": false,
-		"editor.tabSize": 4
+		"editor.insertSpaces": false
 	},
 	"[python]": {
 		//"editor.defaultFormatter": "eeyore.yapf",
@@ -30,13 +26,11 @@
 	"[uiua]": {
 		"editor.fontFamily": "Uiua386, BQN386 Unicode, monospace",
 		"editor.fontSize": 18,
-		"editor.indentSize": "tabSize",
 		"editor.insertSpaces": true,
 		"editor.rulers": [ 60 ],
 		"editor.tabSize": 2,
 		"editor.unicodeHighlight.ambiguousCharacters": false
 	},
-	"breadcrumbs.enabled": false,
 	"C_Cpp.formatting": "vcFormat",
 	"C_Cpp.vcFormat.newLine.beforeCatch": false,
 	"C_Cpp.vcFormat.newLine.beforeElse": false,
@@ -66,12 +60,13 @@
 	// "editor.fontFamily": "Monaspace Xenon Var, monospace",
 	// "editor.fontFamily": "novamono, monospace",
 	"editor.fontFamily": "comic mono, monospace",
+	// "editor.fontFamily": "comic shanns, monospace",
 	// "editor.fontFamily": "APL387 Unicode, monospace",
 	// "editor.fontFamily": "b612 mono, monospace",
 	// "editor.fontFamily": "monocraft, monospace",
 	// "editor.fontLigatures": "'onum', 'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
 	// "editor.fontLigatures": true,
-	"editor.fontSize": 14,
+	"editor.fontSize": 15,
 	"editor.formatOnSave": true,
 	"editor.indentSize": "tabSize",
 	"editor.inlayHints.enabled": "off",
@@ -124,14 +119,13 @@
 	"python.defaultInterpreterPath": "py",
 	"security.workspace.trust.enabled": false,
 	"terminal.integrated.defaultProfile.windows": "PowerShell",
-	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.fontSize": 15,
 	"uiua.format.onTypeFormatting": true,
 	"uiua.inlayHints.bindingSignatureHints": false,
 	"uiua.inlayHints.inlineSignatureHints": false,
 	"uiua.inlayHints.values": true,
 	"uiua.semanticHighlighting.customTokenTypes": true,
 	"vsicons.dontShowNewVersionMessage": true,
-	"workbench.colorTheme": "Ayu Dark",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.iconTheme": "vscode-icons",
 	"window.commandCenter": false,
@@ -139,4 +133,8 @@
 	"window.menuBarVisibility": "toggle",
 	"workbench.sideBar.location": "right",
 	"editor.minimap.enabled": false,
+	"nim.formatOnSave": true,
+	"go.toolsManagement.autoUpdate": true,
+	"workbench.colorTheme": "paddy-dark-upright",
+	"breadcrumbs.enabled": false,
 }

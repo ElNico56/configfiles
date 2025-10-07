@@ -15,7 +15,7 @@ print "\n"
 
 let ansi = [(ansi lr) (ansi ly) (ansi lg) (ansi lc) (ansi lu) (ansi lm)]
 let fc = ($ansi | shuffle | first)
-let sc = ($ansi | filter {$in != $fc } | shuffle | first)
+let sc = ($ansi | where {$in != $fc } | shuffle | first)
 def create_left_prompt [] {
 	let path = pwd | str replace $"($env.HOMEDRIVE)($env.HOMEPATH)" '~'
 	let folders = $path | split row $"\\"

@@ -10,6 +10,6 @@
     "indentchar": "|",
     "matchbracestyle": "highlight",
     "reload": "auto",
-    "statusformatl": "$(filename):$(line):$(col) $(modified)",
+    "statusformatl": "$(filename) $(modified)",
     "statusformatr": ""
 }

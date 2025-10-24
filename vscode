@@ -131,10 +131,11 @@
 	"window.commandCenter": false,
 	"workbench.layoutControl.enabled": false,
 	"window.menuBarVisibility": "toggle",
-	"workbench.sideBar.location": "right",
 	"editor.minimap.enabled": false,
 	"nim.formatOnSave": true,
 	"go.toolsManagement.autoUpdate": true,
-	"workbench.colorTheme": "paddy-dark-upright",
+	"workbench.colorTheme": "The Best Theme",
 	"breadcrumbs.enabled": false,
+	"workbench.activityBar.location": "top",
+	"workbench.sideBar.location": "right",
 }
